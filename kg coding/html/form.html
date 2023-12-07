@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="/submit.py" method="post">
+      <label for="email">UserName:</label>
+      <input type="text" placeholder="email " id="email" /><br />
+      <label for="user_password">Password:</label>
+      <input type="password" placeholder="Password" id="user_password" /> <br />
+      Date: <input type="date" /><br />
+      File: <input type="File" /><br />
+      Color: <input type="color" /><br />
+      Range: <input type="Range" /><br />
+      Poke Me: <input type="button" value="poked" /><br />
+      <!-- Radio Button  -->
+      <label for="male">Male</label>
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="female">Female</label>
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="other">Other</label>
+      <input type="radio" id="other" name="gender" value="Other" /><br />
+      <!-- Checks Box  -->
+      <label for="c">C</label>
+      <input type="checkbox" name="lang" id="C" />
+      <label for="C++">C++</label>
+      <input type="checkbox" name="lang" id="C++" />
+      <label for="Python">Python</label>
+      <input type="checkbox" name="lang" id="Python" /><br />
+
+      <!-- Select a DropDown  -->
+      <label for="country">Select Your Country:</label>
+      <select name="country" id="country">
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="India">India</option>
+        <option value="US">US</option>
+        <option value="UK">UK</option>
+        <option value="Other">Other</option>
+      </select>
+      <br />
+      <!-- text area  -->
+      <textarea name="story" id="story" cols="30" rows="10"></textarea><br />
+      Submit: <input type="Submit" /><br />
+    </form>
+  </body>
+</html>
